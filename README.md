@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# Book Search:book:
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### RESTful API :arrow_right: GraphQL API
 
-## Available Scripts
+## Purpose:heavy_exclamation_mark:
 
-In the project directory, you can run:
+To take a fully functioning Google Books API search engine built with a RESTful API, and refactor it to be a GraphQL API built with Apollo Server.<br>
 
-### `npm start`
+### USER STORY:
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+`"AS AN avid reader I WANT to search for new books to read SO THAT I can keep a list of books to purchase"`
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+When running `npm start`, the first page showed this:
+![Initial book search in RESTFUL API](client/public/first-search.png)
 
-### `npm test`
+## Table of Contents::mag:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1.  [ HEROKU DEPLOY:heavy_plus_sign: ](#heroku)
+2.  [ Installation:hammer: ](#installation)
+3.  [ Contributing:handshake: ](#contributing)
 
-### `npm run build`
+## Heroku
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+[Click Here to view the application live!](https://fast-ocean-62926.herokuapp.com/) <br>
+Log In successful, and books are saving:
+![Log In successful, and books are saving](client/public/saved-books.png) <br>
+Deleted books, logged out, logged back in and the one saved book appears:
+![Deleted books, logged out, logged back in and the one saved book appears](client/public/deleted.png)
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Installation
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+To install dependancies, run the following commands:
 
-### `npm run eject`
+     ```
+     `npm install` to create node_modules in client, server and root
+     ```
+     I made sure to delete the package-lock.json file in the root first, and downgrade react & react-dom  to 17.0.2 in the client directory.
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+     `npm install --save apollo-server apollo-server-core apollo-server-express graphql npm install --save-dev @types/graphql @types/express typescript` in root to install Apollo connection and grapql API
+     ```
+     run `mongod` to start MONGODB service in another terminal
+     ```
+     ```
+     `npm start` to run from client directory, `npm run watch` from server directory, and `npm run develop` from the root:
+     These will run the app with the all functionality to log in, search for, save, and delete books, and log out with saved information with the next login.
+     ```
+     ```
+     `npm i heroku` and `heroku create` to create URL of app in Heroku.com
+     ```
+     I used GitHub Actions to connect my Heroku application to my account and save all progress.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## Contributing:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+Please be kind and professional when adding to or accessing this repository. Thank you!
+[More on Contribution Guidelines](https://github.com/verokoles/readme-generator/blob/f57cf6a98bf276960885496059df4b039247c985/contributing.md)
