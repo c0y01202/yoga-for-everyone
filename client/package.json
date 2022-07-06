@@ -4,10 +4,12 @@
   "private": true,
   "proxy": "http://localhost:3001",
   "dependencies": {
+    "@apollo/client": "^3.6.9",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^11.1.0",
     "@testing-library/user-event": "^13.5.0",
     "bootstrap": "^4.4.1",
+    "graphql": "^16.5.0",
     "jwt-decode": "^2.2.0",
     "react": "^17.0.2",
     "react-bootstrap": "^1.0.1",
@@ -35,5 +37,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  }
+  },
+  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
+  "main": "index.js",
+  "keywords": [
+    "Project",
+    "3"
+  ],
+  "author": "Team Project",
+  "license": "ISC"
 }
