@@ -1,5 +1,8 @@
 {
-  "name": "mern-social-media",
+
+
+  "name": "yoga-for-everyone",
+
   "version": "1.0.0",
   "description": "",
   "main": "server/server.js",
@@ -17,7 +20,11 @@
     "concurrently": "^5.1.0"
   },
   "dependencies": {
+
     "bootstrap": "^5.1.3",
     "react-bootstrap": "^2.4.0"
+    "apollo-server-express": "^3.9.0",
+    "react-icons": "^4.4.0"
+
   }
 }
