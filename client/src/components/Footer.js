@@ -6,8 +6,8 @@ const handleURL = (url) => {
   };
   const Footer = () => {
     return (
-      <div className={classes.footer}>
-        <div className={classes.icons}>
+      <div>
+        <div>
           <FaPinterest
             color="white"
             size="50px"
