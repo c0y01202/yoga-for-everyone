@@ -1,6 +1,6 @@
 const mongoose = require('mongoose');
 
-mongoose.connect
+mongoose.connect(
   process.env.MONGDB_URI || "mongodb://localhost:27017/yoga-for-everyone",
 
   {
