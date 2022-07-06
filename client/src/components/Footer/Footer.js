@@ -1,5 +1,5 @@
 import { FaFacebook, FaPinterest, FaInstagram } from "react-icons/fa";
-// import classes from './footer.css';
+import classes from './footer.css';
 
 const handleURL = (url) => {
     return () => window.open(url, "_blank");
