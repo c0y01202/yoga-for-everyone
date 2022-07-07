@@ -1,7 +1,9 @@
-node_modules/
+**/node_modules/
 
 client/node_modules
 
 server/node_modules
 
-bak/
+package-lock.json/
+
+DS_store/
