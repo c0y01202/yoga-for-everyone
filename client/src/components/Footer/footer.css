@@ -1,0 +1,27 @@
+
+   .footer {
+    background-color: rgb(155, 140, 158);
+    display: flex;
+    align-items: center; 
+    height: 15vh;
+   
+
+}
+
+.footer .icons {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+
+.footer .icons svg path {
+    cursor: pointer;
+}
+
+.footer .icons:hover {
+    background-color: rgb(184, 199, 184);
+    color:rgb(128, 96, 128);
+    border-radius: 15px;
+
+}
