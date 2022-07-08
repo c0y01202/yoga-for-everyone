@@ -4,7 +4,11 @@
   "description": "### Interactive MERN SPA Project",
   "main": "index.js",
   "devDependencies": {
+<<<<<<< HEAD
     "concurrently": "^5.3.0"
+=======
+    "concurrently": "^5.1.1"
+>>>>>>> veronica
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -23,4 +27,8 @@
     "url": "https://github.com/c0y01202/yoga-for-everyone/issues"
   },
   "homepage": "https://github.com/c0y01202/yoga-for-everyone#readme"
+<<<<<<< HEAD
 }
+=======
+}
+>>>>>>> veronica

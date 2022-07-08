@@ -47,4 +47,8 @@ const startApolloServer = async (typeDefs, resolvers) => {
 };
 
 // Call the async function to start the server
+<<<<<<< HEAD
 startApolloServer(typeDefs, resolvers);
+=======
+startApolloServer(typeDefs, resolvers);
+>>>>>>> veronica
