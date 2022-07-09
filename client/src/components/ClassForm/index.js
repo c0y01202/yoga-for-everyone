@@ -39,24 +39,11 @@ const ClassForm = () => {
     setClassFormData({ ...classFormData, [name]: value });
   };
 
- 
 
-  // submit form
-  // const handleFormSubmit = async (event) => {
-  //   event.preventDefault();
 
-  //   try {
-  //     await addClass({
-  //       variables: { classText, testText },
-  //     });
 
-  //     // clear form value
-  //     setText('');
-  //     setTestText('');
-  //   } catch (e) {
-  //     console.error(e);
-  //   }
-  // };
+
+
 
   const handleFormSubmit = async (event) => {
     event.preventDefault();
@@ -69,10 +56,16 @@ const ClassForm = () => {
     // }
 
     try {
-      await addClass(classFormData);
+      await console.log(classFormData);
     } catch (err) {
       console.error(err);
     }
+
+    // @NOTE: Old try block:
+      //   try {
+      //     await addClass({
+      //       variables: { classText, testText },
+      //     });
 
     setClassFormData({
       classText: '',
