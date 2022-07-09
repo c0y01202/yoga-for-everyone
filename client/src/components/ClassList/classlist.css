@@ -1,0 +1,16 @@
+#cssDisplay {
+    background-color: #D6F8FF;
+    color: #212121;
+    border: 3px groove #6D6D6D;
+    padding: 4px;
+    margin: 4px;
+    font-family: 'courier new';
+    font-style: normal;
+    font-weight: normal;
+    font-variant: normal;
+    text-indent: 8px;
+    letter-spacing: 2px;
+    text-transform: none;
+    background-image: url(images/class_list.png);
+    background-position: top;
+  }
