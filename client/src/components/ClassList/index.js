@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 
 const ClassList = ({ classes, title }) => {
   if (!classes.length) {
-    return <h3>No Classs Yet</h3>;
+    return <h3>No Classes Yet</h3>;
   }
 
   return (
@@ -24,7 +24,8 @@ const ClassList = ({ classes, title }) => {
             </p>
             <div className="card-body">
               <Link to={`/class1/${class1._id}`}>
-                <p>{class1.classText}</p>
+                <p>Class Title: {class1.classText}</p>
+                <p>Class Time: {class1.testText}</p>
                 <p className="mb-0">
                   Reactions: {class1.reactionCount} || Click to{' '}
                   {class1.reactionCount ? 'see' : 'start'} the discussion!

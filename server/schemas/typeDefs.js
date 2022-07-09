@@ -13,6 +13,7 @@ const typeDefs = gql`
   type Class {
     _id: ID
     classText: String
+    testText: String
     createdAt: String
     username: String
     reactionCount: Int
@@ -42,7 +43,7 @@ const typeDefs = gql`
   type Mutation {
     login(email: String!, password: String!): Auth
     addUser(username: String!, email: String!, password: String!): Auth
-    addClass(classText: String!): Class
+    addClass(classText: String!, testText: String!): Class
     addReaction(classId: ID!, reactionBody: String!): Class
     addFriend(friendId: ID!): User
   }
