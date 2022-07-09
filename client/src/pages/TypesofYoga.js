@@ -6,7 +6,7 @@ function TypesofYoga() {
   return (
     <div className="TypesofYoga">
       <img
-        src={require("./react_images/TypesofYoga/aerial.png")}
+        src={require("./src/public/react_images/TypesofYoga/aerial.png")}
         alt="Aerial Yoga"
         height={200}
         width={300}
