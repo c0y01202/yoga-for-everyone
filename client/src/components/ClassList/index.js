@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import './ClassList.css';
+import "./classlist.css";
 
 const ClassList = ({ classes, title }) => {
   if (!classes.length) {
