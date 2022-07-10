@@ -20,10 +20,10 @@ const ClassList = ({ classes, title }) => {
               <Link to={`/class1/${class1._id}`}>
                 <p>Class Title: {class1.classText}</p>
                 <p>Class Time: {class1.testText}</p>
-                <p className="mb-0">
+                {/* <p className="mb-0">
                   Reactions: {class1.reactionCount} || Click to{' '}
                   {class1.reactionCount ? 'see' : 'start'} the discussion!
-                </p>
+                </p> */}
               </Link>
             </div>
           </div>
