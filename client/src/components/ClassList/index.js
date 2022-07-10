@@ -13,13 +13,7 @@ const ClassList = ({ classes, title }) => {
         classes.map(class1 => (
           <div key={class1._id} className="card mb-3">
             <p className="card-header">
-              <Link
-                to={`/profile/${class1.username}`}
-                style={{ fontWeight: 700 }}
-                className="text-light"
-              >
-                {class1.username}
-              </Link>{' '}
+              A user {' '}
               booked a class on {class1.createdAt}
             </p>
             <div className="card-body">

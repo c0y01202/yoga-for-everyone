@@ -59,10 +59,11 @@ const ClassForm = () => {
 
   return (
     <div>
+      <h1>Schedule a Class</h1>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group>
           <Form.Label htmlFor='classText'>Class:</Form.Label>
-          <Form.Select className="form-input col-12 col-md-9" name="classText" onChange={handleInputChange} value={classFormData.classText} aria-label="Default select example">
+          <Form.Select className="form-input col-9 col-md-9" name="classText" onChange={handleInputChange} value={classFormData.classText} aria-label="Default select example">
             <option>Select A Class</option>
             <option value="Aerial-With-Claudia">Aerial Yoga With Claudia</option>
             <option value="Ashtanga-With-John">Ashtanga with John</option>
@@ -72,7 +73,7 @@ const ClassForm = () => {
 
         <Form.Group>
           <Form.Label htmlFor='testText'>Time:</Form.Label>
-          <Form.Select className="form-input col-12 col-md-9" name="testText" onChange={handleInputChange} value={classFormData.testText} aria-label="Default select example">
+          <Form.Select className="form-input col-9 col-md-9" name="testText" onChange={handleInputChange} value={classFormData.testText} aria-label="Default select example">
             <option>Select A Time</option>
             <option value="10am-Tue-Thu">10am - Tue/Thu</option>
             <option value="10am-Mon-Wed">10am - Mon/Wed</option>
