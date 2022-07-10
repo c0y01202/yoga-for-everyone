@@ -44,88 +44,41 @@ const ClassForm = () => {
 
 
 
-
+  // submit form
   const handleFormSubmit = async (event) => {
     event.preventDefault();
 
-    // check if form has everything (as per react-bootstrap docs)
-    const form = event.currentTarget;
-    // if (form.checkValidity() === false) {
-    //   event.preventDefault();
-    //   event.stopPropagation();
-    // }
-
     try {
-      await console.log(classFormData);
-    } catch (err) {
-      console.error(err);
+      await addClass({variables: {classText: classFormData.classText, testText: classFormData.testText}});
+
+      // clear form value
+    } catch (e) {
+      console.error(e);
     }
-
-    // @NOTE: Old try block:
-      //   try {
-      //     await addClass({
-      //       variables: { classText, testText },
-      //     });
-
-    setClassFormData({
-      classText: '',
-      testText: '',
-    });
   };
 
   return (
     <div>
-      <Form
-        onSubmit={handleFormSubmit}
-      >
-        {/* <select onChange={handleClassChange} className="form-input col-12 col-md-9" name="classList" id="classList">
-          <option>Choose a class</option>
-          <option value="classOne">Aerial Yoga With Claudia</option>
-          <option value="classTwo">Ashtanga with John</option>
-          <option value="classThree">Vinyasa with Veronica</option>
-        </select>
-        <select onChange={handleTimeChange} className="form-input col-12 col-md-9" name="timeList" id="timeList">
-          <option>Choose a time</option>
-          <option value="classOne">10am</option>
-          <option value="classTwo">2pm</option>
-          <option value="classThree">7pm</option>
-        </select> */}
-                {/* <textarea
-          placeholder="Class"
-          id="class"
-          value={classChoice}
-          className="form-input col-12 col-md-9"
-          onChange={handleClassChange}
-        ></textarea>
-                <textarea
-          placeholder="Time"
-          id="time"
-          value={timeChoice}
-          className="form-input col-12 col-md-9"
-          onChange={handleTimeChange}
-        ></textarea> */}
-                <Form.Group>
+      <Form onSubmit={handleFormSubmit}>
+        <Form.Group>
           <Form.Label htmlFor='classText'>Class:</Form.Label>
-          <Form.Control
-            type='text'
-            placeholder='Your class'
-            name='classText'
-            onChange={handleInputChange}
-            value={classFormData.classText}
-            required
-          />
+          <Form.Select className="form-input col-12 col-md-9" name="classText" onChange={handleInputChange} value={classFormData.classText} aria-label="Default select example">
+            <option>Select A Class</option>
+            <option value="Aerial-With-Claudia">Aerial Yoga With Claudia</option>
+            <option value="Ashtanga-With-John">Ashtanga with John</option>
+            <option value="Vinyasa-With-Veronica">Vinyasa with Veronica</option>
+          </Form.Select>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor='testText'>Time</Form.Label>
-          <Form.Control
-            type='text'
-            placeholder='Your time'
-            name='testText'
-            onChange={handleInputChange}
-            value={classFormData.testText}
-            required
-          />
+          <Form.Label htmlFor='testText'>Time:</Form.Label>
+          <Form.Select className="form-input col-12 col-md-9" name="testText" onChange={handleInputChange} value={classFormData.testText} aria-label="Default select example">
+            <option>Select A Time</option>
+            <option value="10am-Tue-Thu">10am - Tue/Thu</option>
+            <option value="10am-Mon-Wed">10am - Mon/Wed</option>
+            <option value="6pm-Tue-Thu">6pm - Tue/Thu</option>
+            <option value="6pm-Mon-Wed">6pm - Mon/Wed</option>
+          </Form.Select>
         </Form.Group>
         <Button
           type='submit'
