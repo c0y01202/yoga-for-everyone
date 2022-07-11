@@ -51,7 +51,8 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/class/:id" element={<SingleClass />} />
-              <Route path="/virtualclass" element={<VirtualClass />} />
+              <Route path="/VirtualClasses" element={<VirtualClass />} />
+              {/* <Route path="/TypesofYoga" element={<TypesofYoga />} /> */}
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>

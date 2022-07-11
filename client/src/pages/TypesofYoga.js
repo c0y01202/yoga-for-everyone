@@ -1,18 +1,18 @@
-import React from "react";
+// import React from "react";
 
-import ".App.css";
+// import ".App.css";
 
-function TypesofYoga() {
-  return (
-    <div className="TypesofYoga">
-      <img
-        src={require("./src/public/react_images/TypesofYoga/aerial.png")}
-        alt="Aerial Yoga"
-        height={200}
-        width={300}
-      />
-    </div>
-  );
-}
+// function TypesofYoga() {
+//   return (
+//     <div className="TypesofYoga">
+//       <img
+//         src={require("./src/public/react_images/TypesofYoga/aerial.png")}
+//         alt="Aerial Yoga"
+//         height={200}
+//         width={300}
+//       />
+//     </div>
+//   );
+// }
 
-export default TypesofYoga;
+// export default TypesofYoga;
