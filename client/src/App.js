@@ -17,6 +17,7 @@ import NoMatch from "./pages/NoMatch";
 import SingleClass from "./pages/SingleClass";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
+import VirtualClass from "./pages/VirtualClasses";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -50,6 +51,7 @@ function App() {
               <Route path="/signup" element={<Signup />} />
               <Route path="/profile" element={<Profile />} />
               <Route path="/class/:id" element={<SingleClass />} />
+              <Route path="/virtualclass" element={<VirtualClass />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>

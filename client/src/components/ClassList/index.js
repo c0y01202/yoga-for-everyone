@@ -1,5 +1,6 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
+import "./classlist.css";
 
 const ClassList = ({ classes, title }) => {
   if (!classes.length) {
@@ -10,10 +11,17 @@ const ClassList = ({ classes, title }) => {
     <div>
       <h3>{title}</h3>
       {classes &&
-        classes.map(class1 => (
+        classes.map((class1) => (
           <div key={class1._id} className="card mb-3">
             <p className="card-header">
               A user {' '}
+              <Link
+                to={`/profile/${class1.username}`}
+                style={{ fontWeight: 700 }}
+                className="text-light"
+              >
+                {class1.username}
+              </Link>{" "}
               booked a class on {class1.createdAt}
             </p>
             <div className="card-body">
