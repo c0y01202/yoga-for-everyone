@@ -8,13 +8,8 @@ import {
 } from "@apollo/client";
 import { setContext } from "@apollo/client/link/context";
 
-<<<<<<< HEAD
-import Header from "./components/Header";
-import Footer from "./components/Footer";
-=======
-import Header from './components/Header/index';
-import Footer from './components/Footer/index';
->>>>>>> veronica
+import Header from './components/Header';
+import Footer from './components/Footer';
 
 import Home from "./pages/Home";
 import Login from "./pages/Login";
