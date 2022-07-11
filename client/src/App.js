@@ -18,6 +18,7 @@ import SingleClass from "./pages/SingleClass";
 import Profile from "./pages/Profile";
 import Signup from "./pages/Signup";
 import VirtualClass from "./pages/VirtualClasses";
+import TypesofYoga from "./pages/TypesofYoga";
 
 const httpLink = createHttpLink({
   uri: "/graphql",
@@ -52,7 +53,7 @@ function App() {
               <Route path="/profile" element={<Profile />} />
               <Route path="/class/:id" element={<SingleClass />} />
               <Route path="/VirtualClasses" element={<VirtualClass />} />
-              {/* <Route path="/TypesofYoga" element={<TypesofYoga />} /> */}
+              <Route path="/TypesofYoga" element={<TypesofYoga />} />
               <Route path="*" element={<NoMatch />} />
             </Routes>
           </div>
