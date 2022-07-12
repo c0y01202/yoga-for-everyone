@@ -39,7 +39,6 @@ classSchema.virtual("reactionCount").get(function () {
 const Class = model("Class", classSchema);
 
 module.exports = {
-  locationSchema,
   Class,
   locationModel,
 };
