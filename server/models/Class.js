@@ -29,8 +29,6 @@ const classSchema = new Schema(
     toJSON: {
       getters: true,
     },
-    //Error: Invalid schema configuration: 'model' is not a valid type within the array
-    orders: { type: [Order.schema], required: true },
   }
 );
 
