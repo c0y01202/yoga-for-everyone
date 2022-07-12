@@ -1,30 +1,22 @@
-const { Schema, model } = require('mongoose');
-const reactionSchema = require('./Reaction');
+const { Schema } = require('mongoose');
 const dateFormat = require('../utils/dateFormat');
 
-const classSchema = new Schema(
+const reactionSchema = new Schema(
   {
-    classText: {
+    reactionBody: {
       type: String,
-      minlength: 1,
+      required: true,
       maxlength: 280
-    },
-    timeChoice:{
-      type: String,
-    },
-    classChoice:{
-      type: String,
-    },
-    createdAt: {
-      type: Date,
-      default: Date.now,
-      get: timestamp => dateFormat(timestamp)
     },
     username: {
       type: String,
       required: true
     },
-    reactions: [reactionSchema]
+    createdAt: {
+      type: Date,
+      default: Date.now,
+      get: timestamp => dateFormat(timestamp)
+    }
   },
   {
     toJSON: {
@@ -33,10 +25,4 @@ const classSchema = new Schema(
   }
 );
 
-classSchema.virtual('reactionCount').get(function() {
-  return this.reactions.length;
-});
-
-const Class = model('Class', classSchema);
-
-module.exports = Class;
+module.exports = reactionSchema;
