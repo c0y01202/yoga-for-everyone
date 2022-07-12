@@ -40,5 +40,5 @@ const Class = model("Class", classSchema);
 
 module.exports = {
   Class,
-  locationModel,
+  locationSchema,
 };
