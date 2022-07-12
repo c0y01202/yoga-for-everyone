@@ -26,10 +26,10 @@ const Header = () => {
             </>
           ) : (
             <>
-              <Link to="/login">Login</Link>
-              <Link to="/signup">Signup</Link>
-              <Link to="/VirtualClasses">Virtual Classes</Link>
-              <Link to="/TypesofYoga">Types of Yoga</Link>
+              <Link to="/login">LOGIN</Link>
+              <Link to="/signup">SIGNUP</Link>
+              <Link to="/VirtualClasses">VIRTUAL CLASSES</Link>
+              <Link to="/TypesofYoga">TYPES OF YOGA</Link>
             </>
           )}
         </nav>
