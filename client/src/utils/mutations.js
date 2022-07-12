@@ -25,12 +25,11 @@ export const ADD_USER = gql`
 `;
 
 export const ADD_THOUGHT = gql`
-  mutation addClass($classText: String!, $timeChoice: String!, $classChoice: String!) {
-    addClass(classText: $classText, timeChoice: $timeChoice, classChoice: $classChoice) {
+  mutation addClass($classText: String!, $testText: String!) {
+    addClass(classText: $classText, testText: $testText) {
       _id
       classText
-      timeChoice
-      classChoice
+      testText
       createdAt
       username
       reactionCount

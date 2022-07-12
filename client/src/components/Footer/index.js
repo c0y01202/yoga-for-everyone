@@ -1,6 +1,6 @@
 import React from 'react';
 import { FaFacebook, FaPinterest, FaInstagram } from "react-icons/fa";
-import classes from 'client/src/components/Footer/footer.css';
+// import classes from 'client/src/components/Footer/footer.css';
 
 const handleURL = (url) => {
   return () => window.open(url, "_blank");
@@ -10,8 +10,9 @@ const Footer = () => {
     <footer className="w-100 mt-auto bg-secondary p-4">
       {/* make this div compatible with css file */}
       <div className="container">
-        &copy;{new Date().getFullYear()} by Colt Shulz, John Pena, Claudia Chittim & Veronica Kolesnikov 
-        <div className={classes.icons}>
+        &copy;{new Date().getFullYear()} by Colt Shulz, John Pena, Claudia
+        Chittim & Veronica Kolesnikov
+        <div className='icons'>
           <FaPinterest
             color="white"
             size="50px"
@@ -24,7 +25,9 @@ const Footer = () => {
             color="white"
             size="50px"
             style={{ padding: "3%" }}
-            onClick={handleURL('https://www.facebook.com/search/top?q=yoga%20for%20everyone')}
+            onClick={handleURL(
+              "https://www.facebook.com/search/top?q=yoga%20for%20everyone"
+            )}
           />
           <FaInstagram
             color="white"
