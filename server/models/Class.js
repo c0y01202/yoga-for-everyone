@@ -24,6 +24,7 @@ const classSchema = new Schema(
       required: true,
     },
     reactions: [reactionSchema],
+    orders: { type: [Order], required: true },
   },
   {
     toJSON: {
