@@ -5,8 +5,7 @@ export const QUERY_THOUGHTS = gql`
     classes(username: $username) {
       _id
       classText
-      timeChoice
-      classchoice
+      testText
       createdAt
       username
       reactionCount
@@ -25,8 +24,7 @@ export const QUERY_THOUGHT = gql`
     class(_id: $id) {
       _id
       classText
-      timeChoice
-      classChoice
+      testText
       createdAt
       username
       reactionCount
@@ -54,8 +52,7 @@ export const QUERY_USER = gql`
       classes {
         _id
         classText
-        timeChoice
-        classchoice
+        testText
         createdAt
         reactionCount
       }
@@ -73,8 +70,7 @@ export const QUERY_ME = gql`
       classes {
         _id
         classText
-        timeChoice
-        classChoice
+        testText
         createdAt
         reactionCount
         reactions {

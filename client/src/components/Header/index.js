@@ -13,15 +13,15 @@ const Header = () => {
     <header className="bg-secondary mb-4 py-2 flex-row align-center">
       <div className="container flex-row justify-space-between-lg justify-center align-center">
         <Link to="/">
-          <h1>Yoga Application</h1>
+          <h1>Y  O  G  A <span className='span'> | for everyone</span></h1>
         </Link>
 
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">Me</Link>
+              <Link to="/profile">My Classes</Link>
               <a href="/" onClick={logout}>
-                Logout
+                LOGOUT
               </a>
             </>
           ) : (
