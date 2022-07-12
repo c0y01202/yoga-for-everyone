@@ -62,11 +62,7 @@ const AppNavbar = () => {
                   <Nav.Link eventKey="VirtualClasses">Virtual Classes</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
-<<<<<<< HEAD
-                  <Nav.Link eventKey="ClassList">Class List</Nav.Link>
-=======
                   <Nav.Link eventKey="TypesofYoga">Types of Yoga</Nav.Link>
->>>>>>> main
                 </Nav.Item>
               </Nav>
             </Modal.Title>
