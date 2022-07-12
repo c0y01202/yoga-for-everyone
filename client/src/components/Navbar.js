@@ -14,8 +14,8 @@ const AppNavbar = () => {
     <>
       <Navbar bg="dark" variant="dark" expand="lg">
         <Container fluid>
-          <Navbar.Brand as={Link} to="/">
-            Google Books Search
+          <Navbar.Brand as={Link} to='/'>
+            Yoga For Everyone 
           </Navbar.Brand>
           <Navbar.Toggle aria-controls="navbar" />
           <Navbar.Collapse id="navbar">
@@ -62,7 +62,11 @@ const AppNavbar = () => {
                   <Nav.Link eventKey="VirtualClasses">Virtual Classes</Nav.Link>
                 </Nav.Item>
                 <Nav.Item>
+<<<<<<< HEAD
                   <Nav.Link eventKey="ClassList">Class List</Nav.Link>
+=======
+                  <Nav.Link eventKey="TypesofYoga">Types of Yoga</Nav.Link>
+>>>>>>> main
                 </Nav.Item>
               </Nav>
             </Modal.Title>
