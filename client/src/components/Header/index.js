@@ -1,10 +1,10 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React from "react";
+import { Link } from "react-router-dom";
 
-import Auth from '../../utils/auth';
+import Auth from "../../utils/auth";
 
 const Header = () => {
-  const logout = event => {
+  const logout = (event) => {
     event.preventDefault();
     Auth.logout();
   };
@@ -19,15 +19,17 @@ const Header = () => {
         <nav className="text-center">
           {Auth.loggedIn() ? (
             <>
-              <Link to="/profile">Me</Link>
+              <Link to="/profile">My Classes</Link>
               <a href="/" onClick={logout}>
                 LOGOUT
               </a>
             </>
           ) : (
             <>
-              <Link to="/login">LOGIN</Link>
-              <Link to="/signup">SIGNUP</Link>
+              <Link to="/login">Login</Link>
+              <Link to="/signup">Signup</Link>
+              <Link to="/VirtualClasses">Virtual Classes</Link>
+              <Link to="/TypesofYoga">Types of Yoga</Link>
             </>
           )}
         </nav>

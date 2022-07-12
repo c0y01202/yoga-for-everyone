@@ -35,11 +35,11 @@ const SingleClass = (props) => {
         </div>
       </div>
 
-      {class1.reactionCount > 0 && (
+      {/* {class1.reactionCount > 0 && (
         <ReactionList reactions={class1.reactions} />
       )}
 
-      {Auth.loggedIn() && <ReactionForm classId={class1._id} />}
+      {Auth.loggedIn() && <ReactionForm classId={class1._id} />} */}
     </div>
   );
 };

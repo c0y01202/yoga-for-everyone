@@ -4,6 +4,19 @@ client/node_modules
 
 server/node_modules
 
+<<<<<<< HEAD
+bak/
+
+DS_store
+**/node_modules/
+
+client/node_modules
+
+server/node_modules
+
+package-lock.json/
+=======
 package-lock.json/
 
 DS_store/
+>>>>>>> veronica

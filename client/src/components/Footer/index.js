@@ -9,9 +9,10 @@ const Footer = () => {
   return (
     <footer className="w-100 mt-auto bg-secondary p-4">
       {/* make this div compatible with css file */}
-      <div className="container text-align: center">
-        &copy;{new Date().getFullYear()} by Colt Shulz, John Pena, Claudia Chittim & Veronica Kolesnikov 
-        <div className= 'icons'>
+      <div className="container">
+        &copy;{new Date().getFullYear()} by Colt Shulz, John Pena, Claudia
+        Chittim & Veronica Kolesnikov
+        <div className='icons'>
           <FaPinterest
             color="white"
             size="13%"
