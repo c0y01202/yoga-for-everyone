@@ -7,6 +7,10 @@
 
 To build a collaborative, responsive, functional website using REACT:<br>
 It includes MERN stack single-page application, a scalable MongoDB back end, a GraphQL API, and an Express.js and Node.js server with a React front end, implementing user authentication with JWT to build a user-focused platform.
+Landing page of yoga website :
+![YOGA FOR EVERYONE]() <br>
+Log in success, user heads to main page:
+![SUCCESSFUL LOGIN]()
 
 ### USER STORY:
 
@@ -20,12 +24,12 @@ It includes MERN stack single-page application, a scalable MongoDB back end, a G
 
 ## Heroku
 
-[Click Here to view the application live!](https://intense-journey-34911.herokuapp.com/) <br>
-Landing page of yoga website :
-![]() <br>
-Log in success, user heads to main page:
-![]()
+[Click Here to view the application live!](https://fierce-spire-39947.herokuapp.com/) <br>
 
+Classes Available:
+![]() <br>
+Types of Yoga:
+![]()
 ## Installation
 
 To install dependancies, run the following commands:
