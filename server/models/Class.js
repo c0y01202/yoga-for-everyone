@@ -24,12 +24,13 @@ const classSchema = new Schema(
       required: true,
     },
     reactions: [reactionSchema],
-    orders: { type: [Order], required: true },
   },
   {
     toJSON: {
       getters: true,
     },
+    //Error: Invalid schema configuration: 'model' is not a valid type within the array
+    orders: { type: [Order.schema], required: true },
   }
 );
 
