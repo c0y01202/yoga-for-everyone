@@ -1,18 +1,20 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
-import { useMutation } from '@apollo/client';
-import { ADD_THOUGHT } from '../../utils/mutations';
-import { QUERY_THOUGHTS, QUERY_ME } from '../../utils/queries';
-import { Form, Button, Alert } from 'react-bootstrap';
+import { useMutation } from "@apollo/client";
+import { ADD_THOUGHT } from "../../utils/mutations";
+import { QUERY_THOUGHTS, QUERY_ME } from "../../utils/queries";
+import { Form, Button, Alert } from "react-bootstrap";
 
 const ClassForm = () => {
-  const [classFormData, setClassFormData] = useState({ classText: '', testText: '' });
+  const [classFormData, setClassFormData] = useState({
+    classText: "",
+    testText: "",
+  });
   const [showAlert, setShowAlert] = useState(false);
 
   const [addClass, { error }] = useMutation(ADD_THOUGHT, {
     update(cache, { data: { addClass } }) {
-      
-        // could potentially not exist yet, so wrap in a try/catch
+      // could potentially not exist yet, so wrap in a try/catch
       try {
         // update me array's cache
         const { me } = cache.readQuery({ query: QUERY_ME });
@@ -21,7 +23,7 @@ const ClassForm = () => {
           data: { me: { ...me, classes: [...me.classes, addClass] } },
         });
       } catch (e) {
-        console.warn("First class booking by user!")
+        console.warn("First class booking by user!");
       }
 
       // update class array's cache
@@ -30,7 +32,7 @@ const ClassForm = () => {
         query: QUERY_THOUGHTS,
         data: { classes: [addClass, ...classes] },
       });
-    }
+    },
   });
 
   // update state based on form input changes
@@ -44,7 +46,12 @@ const ClassForm = () => {
     event.preventDefault();
 
     try {
-      await addClass({variables: {classText: classFormData.classText, testText: classFormData.testText}});
+      await addClass({
+        variables: {
+          classText: classFormData.classText,
+          testText: classFormData.testText,
+        },
+      });
 
       // clear form value
     } catch (e) {
@@ -57,18 +64,32 @@ const ClassForm = () => {
       <h1>Schedule a Class</h1>
       <Form onSubmit={handleFormSubmit}>
         <Form.Group>
-          <Form.Label htmlFor='classText'>Class:</Form.Label>
-          <Form.Select className="form-input col-9 col-md-9" name="classText" onChange={handleInputChange} value={classFormData.classText} aria-label="Default select example">
+          <Form.Label htmlFor="classText">Class:</Form.Label>
+          <Form.Select
+            className="form-input col-9 col-md-9"
+            name="classText"
+            onChange={handleInputChange}
+            value={classFormData.classText}
+            aria-label="Default select example"
+          >
             <option>Select A Class</option>
-            <option value="Aerial-With-Claudia">Aerial Yoga With Claudia</option>
+            <option value="Aerial-With-Claudia">
+              Aerial Yoga With Claudia
+            </option>
             <option value="Ashtanga-With-John">Ashtanga with John</option>
             <option value="Vinyasa-With-Veronica">Vinyasa with Veronica</option>
           </Form.Select>
         </Form.Group>
 
         <Form.Group>
-          <Form.Label htmlFor='testText'>Time:</Form.Label>
-          <Form.Select className="form-input col-9 col-md-9" name="testText" onChange={handleInputChange} value={classFormData.testText} aria-label="Default select example">
+          <Form.Label htmlFor="testText">Time:</Form.Label>
+          <Form.Select
+            className="form-input col-9 col-md-9"
+            name="testText"
+            onChange={handleInputChange}
+            value={classFormData.testText}
+            aria-label="Default select example"
+          >
             <option>Select A Time</option>
             <option value="10am-Tue-Thu">10am - Tue/Thu</option>
             <option value="10am-Mon-Wed">10am - Mon/Wed</option>
@@ -76,9 +97,7 @@ const ClassForm = () => {
             <option value="6pm-Mon-Wed">6pm - Mon/Wed</option>
           </Form.Select>
         </Form.Group>
-        <Button
-          type='submit'
-          variant='success'>
+        <Button type="submit" variant="success">
           Submit
         </Button>
       </Form>
