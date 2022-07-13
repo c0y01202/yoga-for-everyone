@@ -1,3 +1,4 @@
+import { InMemoryLRUCache } from "@apollo/utils.keyvaluecache";
 const express = require("express");
 const { ApolloServer } = require("apollo-server-express");
 const path = require("path");
@@ -8,7 +9,13 @@ const db = require("./config/connection");
 
 const PORT = process.env.PORT || 3001;
 const server = new ApolloServer({
-  cache: "bounded",
+  // ...
+  cache: new InMemoryLRUCache({
+    // ~100MiB
+    maxSize: Math.pow(2, 20) * 100,
+    // 5 minutes (in milliseconds)
+    ttl: 300_000,
+  }),
   typeDefs,
   resolvers,
   context: authMiddleware,
