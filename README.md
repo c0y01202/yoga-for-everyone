@@ -6,7 +6,7 @@
 
 The purpose of this project is to build a collaborative, responsive and functional website using REACT. This application includes MERN stack single-page application, a scalable MongoDB back-end, a GraphQL API, and an Express.js and a Node.js server with a React front-end that implements user-authentication with JWT. The purpose of the JWT is to authenticate users to access a schedule for yoga classes. The purpose of the other links is to build a user-focused platform that allows for greater knowledge of types of yoga and access to virtual classes.
 
-# User Story:
+## User Story:
 
 `"AS A yoga enthusiest I WANT an application that gives me access to studios I can attend. I WANT to be able to log in and out, and search for different yoga classes and times and locations SO THAT I can attend upcoming yoga events. As a user I also want to be able to access information on types of yoga and have access to virtual classes that I can pay for in the case that I cannot be at the yoga studio physically."`
 
@@ -20,10 +20,6 @@ The purpose of this project is to build a collaborative, responsive and function
 
 [Click Here to view the application live!](https://fierce-spire-39947.herokuapp.com/) <br>
 
-Classes Available:
-![]() <br>
-Types of Yoga:
-![]()
 
 ## Installation
 
