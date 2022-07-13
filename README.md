@@ -1,16 +1,14 @@
-
 # YOGA FOR EVERYONE:lotus_position:
 
 ### Interactive MERN SPA Project
 
-## Purpose:heavy_exclamation_mark:
+## Purpose:
 
-To build a collaborative, responsive, functional website using REACT:<br>
-It includes MERN stack single-page application, a scalable MongoDB back end, a GraphQL API, and an Express.js and Node.js server with a React front end, implementing user authentication with JWT to build a user-focused platform.
+The purpose of this project is to build a collaborative, responsive and functional website using REACT. This application includes MERN stack single-page application, a scalable MongoDB back-end, a GraphQL API, and an Express.js and a Node.js server with a React front-end that implements user-authentication with JWT. The purpose of the JWT is to authenticate users to access a schedule for yoga classes. The purpose of the other links is to build a user-focused platform that allows for greater knowledge of types of yoga and access to virtual classes.
 
-### USER STORY:
+# User Story:
 
-`"AS A yoga enthusiest I WANT an application that gives me access to studios I can attend. I WANT to be able to log in and out, and search for different yoga classes and times and locations SO THAT I can attend upcoming yoga events."`
+`"AS A yoga enthusiest I WANT an application that gives me access to studios I can attend. I WANT to be able to log in and out, and search for different yoga classes and times and locations SO THAT I can attend upcoming yoga events. As a user I also want to be able to access information on types of yoga and have access to virtual classes that I can pay for in the case that I cannot be at the yoga studio physically."`
 
 ## Table of Contents::mag:
 
@@ -31,23 +29,14 @@ Log in success, user heads to main page:
 To install dependancies, run the following commands:
 
      ```
-     `npm install` to create node_modules in client, server and root
+     `npm install` to create node_modules in client, server and root directories. Also CD into the server directory and run 'npm run seed'.
      ```
-     I made sure to delete the package-lock.json file in the root first, and downgrade react & react-dom  to 17.0.2 in the client directory.
-
-     `npm install --save apollo-server apollo-server-core apollo-server-express graphql npm install --save-dev @types/graphql @types/express typescript` in root to install Apollo connection and grapql API
-     ```
-     run `mongod` to start MONGODB service in another terminal
-     ```
-     ```
-     `npm start` to run from client directory, `npm run watch` from server directory, and `npm run develop` from the root:
-     ```
-     ```
-     `npm i heroku` and `heroku create` to create URL of app in Heroku.com
-     ``
 
 ## Contributing:
 
 Please be kind and professional when adding to or accessing this repository. Thank you!
 [More on Contribution Guidelines](https://github.com/verokoles/readme-generator/blob/f57cf6a98bf276960885496059df4b039247c985/contributing.md)
 
+## Contributing Authors:
+
+Claudia Chittim, Veronica Kolesnikov, John Pena and Colt Schultz. Copyright, 2022.
