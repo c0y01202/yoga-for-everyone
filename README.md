@@ -20,6 +20,10 @@ The purpose of this project is to build a collaborative, responsive and function
 2.  [ Installation:hammer: ](#installation)
 3.  [ Contributing:handshake: ](#contributing)
 
+## GitHub URL
+
+https://github.com/c0y01202/yoga-for-everyone
+
 ## Heroku
 
 [Click Here to view the application live!](https://fierce-spire-39947.herokuapp.com/) <br>
