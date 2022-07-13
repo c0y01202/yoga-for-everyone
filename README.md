@@ -20,7 +20,6 @@ The purpose of this project is to build a collaborative, responsive and function
 
 [Click Here to view the application live!](https://fierce-spire-39947.herokuapp.com/) <br>
 
-
 ## Installation
 
 To install dependancies, run the following commands:
