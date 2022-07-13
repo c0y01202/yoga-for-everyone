@@ -24,12 +24,15 @@ Classes Available:
 ![]() <br>
 Types of Yoga:
 ![]()
+
 ## Installation
 
 To install dependancies, run the following commands:
 
      ```
      `npm install` to create node_modules in client, server and root directories. Also CD into the server directory and run 'npm run seed'.
+
+     'npm run develop' from the root directory.
      ```
 
 ## Contributing:
