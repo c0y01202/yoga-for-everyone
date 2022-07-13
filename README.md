@@ -1,3 +1,5 @@
+![homepage_new](https://user-images.githubusercontent.com/97765679/178847361-b21cdc2e-52cb-41bd-8c29-de1cb09edfae.png)
+
 # YOGA FOR EVERYONE:lotus_position:
 
 ### Interactive MERN SPA Project
@@ -9,6 +11,8 @@ The purpose of this project is to build a collaborative, responsive and function
 ## User Story:
 
 `"AS A yoga enthusiest I WANT an application that gives me access to studios I can attend. I WANT to be able to log in and out, and search for different yoga classes and times and locations SO THAT I can attend upcoming yoga events. As a user I also want to be able to access information on types of yoga and have access to virtual classes that I can pay for in the case that I cannot be at the yoga studio physically."`
+
+![types_of_yoga](https://user-images.githubusercontent.com/97765679/178847375-cb9c7cdd-c21e-45e5-9f97-1fd9bc49da4d.png)
 
 ## Table of Contents::mag:
 
