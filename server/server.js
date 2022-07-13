@@ -27,6 +27,10 @@ app.use(express.urlencoded({ extended: false }));
 app.use(express.json());
 // Create a new instance of an Apollo server with the GraphQL schema
 
+// serving static files
+console.log("Path: ", path.join(__dirname, "../client/build"));
+app.use(express.static(path.join(__dirname, "../client/build")));
+
 const startApolloServer = async (typeDefs, resolvers) => {
   await server.start();
   // integrate our Apollo server with the Express application as middleware
