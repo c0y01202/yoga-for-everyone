@@ -6,7 +6,7 @@ const handleURL = (url) => {
 };
 const Footer = () => {
   return (
-    <footer className="w-100 mt-auto bg-secondary p-4">
+    <footer className="w-100 mt-auto bg-secondary p-1">
       {/* make this div compatible with css file */}
       <div className="container">
         &copy;{new Date().getFullYear()} by Colt Shulz, John Pena, Claudia

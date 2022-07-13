@@ -18,12 +18,12 @@ The purpose of this project is to build a collaborative, responsive and function
 
 ## Heroku
 
-[Click Here to view the application live!](https://intense-journey-34911.herokuapp.com/) <br>
-Landing page of yoga website :
-![]() <br>
-Log in success, user heads to main page:
-![]()
+[Click Here to view the application live!](https://fierce-spire-39947.herokuapp.com/) <br>
 
+Classes Available:
+![]() <br>
+Types of Yoga:
+![]()
 ## Installation
 
 To install dependancies, run the following commands:
