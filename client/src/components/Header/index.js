@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import cover from '../../components/react_images/cover2.jpg';
 import Auth from "../../utils/auth";
 
 const Header = () => {
@@ -34,7 +34,11 @@ const Header = () => {
           )}
         </nav>
       </div>
+      <div className="image">
+     <img src={cover} alt="yoga" />
+</div>
     </header>
+   
   );
 };
 

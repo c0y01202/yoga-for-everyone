@@ -17,6 +17,19 @@
   box-sizing: border-box;
 }
 
+.image {
+  width:100%;
+  display: flex;
+  justify-content: center;
+  height: 450px;
+  padding: 1%;
+
+
+
+
+
+}
+
 html,
 body {
   min-height: 100%;
